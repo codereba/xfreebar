@@ -1,0 +1,2 @@
+<?xml version="1.0"?>
+<TOOLBAR><COMMANDS><WEBJUMP name="COMMAND" href="http://www.openforge.cn/plus/search.php?kwtype=0&amp;amp;keyword=%s1&amp;amp;select=titlekeyword&amp;amp;x=17&amp;amp;y=11"/></COMMANDS><BUTTON caption="" hint="Open Source In China" command="COMMAND" img="freeoffers.ico" hot_img="def.ico"><MENU type="None"/></BUTTON></TOOLBAR>

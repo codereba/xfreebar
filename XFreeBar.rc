@@ -1,0 +1,312 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "winres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(中华人民共和国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""winres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "1 TYPELIB ""XFreeBar.tlb""\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080403a8"
+        BEGIN
+            VALUE "CompanyName", "Codereba Soft Incorporated"
+            VALUE "FileDescription", "XFreeBar"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "XFreeBar.dll"
+            VALUE "LegalCopyright", "Codereba Soft Incorporated。保留所有权利。"
+            VALUE "OriginalFilename", "XFreeBar.dll"
+            VALUE "ProductName", "XFreeBar"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 936
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// REGISTRY
+//
+
+IDR_XFREEBAR            REGISTRY                "XFreeBar.rgs"
+IDR_XTOOLBARHOST        REGISTRY                "XToolBarHost.rgs"
+IDR_HTMLEVENTHANDLER    REGISTRY                "HtmlEventHandler.rgs"
+IDR_CONTEXTITEM         REGISTRY                "ContextItem.rgs"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// WAVE
+//
+
+BLOCKSOUND              WAVE                    "res\\PopupBlocker.wav"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_EDIT_ICON           ICON                    "images\\xicon.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_XTOOLBAR_OPTION_DLG DIALOGEX 0, 0, 290, 275
+STYLE DS_SETFONT | DS_MODALFRAME | DS_SETFOREGROUND | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "XToolBar Option"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "Update Now",IDOK,22,254,50,14,BS_NOTIFY
+    PUSHBUTTON      "Update Later",IDCANCEL,215,254,50,14,BS_NOTIFY
+    CONTROL         "",IDC_OPTION_TAB,"SysTabControl32",TCS_MULTILINE | WS_TABSTOP,16,17,257,228
+END
+
+IDD_ABOUT DIALOGEX 0, 0, 251, 106
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,189,86,50,14
+    CONTROL         "",IDC_STATIC_ABOUT,"Static",SS_BLACKFRAME,7,7,237,37
+    LTEXT           "@2009 CoderebaSoft.\r\nemail:dante.1265@hotmail.com\r\n",IDC_STATIC,11,67,186,19
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_XTOOLBAR_OPTION_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 283
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 268
+    END
+
+    IDD_ABOUT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 244
+        VERTGUIDE, 7
+        VERTGUIDE, 244
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 99
+        HORZGUIDE, 67
+        HORZGUIDE, 86
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_PROJNAME            "XFreeBar"
+END
+
+#endif    // 中文(中华人民共和国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// 英语(英国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENG)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_UK
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_TAB_ADDBUTTON DIALOGEX 0, 0, 247, 176
+STYLE DS_SETFONT | WS_CHILD
+FONT 8, "MS Sans Serif", 400, 0, 0x0
+BEGIN
+    LISTBOX         IDC_LIST_ALLBTN,4,21,69,150,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_HSCROLL | WS_TABSTOP
+    LTEXT           "",IDC_STATIC_NORM_BMP,174,21,16,16,SS_NOTIFY | WS_TABSTOP
+    LTEXT           "",IDC_STATIC_HOT_BMP,174,44,16,16,SS_NOTIFY | WS_TABSTOP
+    EDITTEXT        IDC_EDIT_URL,82,72,157,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_DESC,82,105,157,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_CAPTION,82,137,157,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Add",IDC_BUTTON_MODIFY,82,157,38,14
+    PUSHBUTTON      "Delete",IDC_BUTTON_DELETE,136,157,38,14
+    LTEXT           "All Button:",IDC_STATIC_LIST,4,7,48,8
+    LTEXT           "Button Infomation:",IDC_STATIC_TITLE,82,5,92,8
+    LTEXT           "Normal Image(16*16):",IDC_STC_NORM,82,26,92,8
+    LTEXT           "Highlight Image(16*16):",IDC_STC_HOT,82,48,92,8
+    LTEXT           "Url(Key word is %s1):",IDC_STATIC_URL,82,61,92,8
+    LTEXT           "Description:",IDC_STATIC_DESC,82,93,143,8
+    LTEXT           "Caption:",IDC_STATIC,82,126,143,8
+END
+
+IDD_TAB_ADDMENU DIALOGEX 0, 0, 241, 158
+STYLE DS_SETFONT | WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    LISTBOX         IDC_LIST_ALL_MENUITEM,11,15,70,138,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_HSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT_CMD_MENU,88,41,144,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_TIP_MENU,88,74,144,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_TITLE_MENU,88,110,144,12,ES_AUTOHSCROLL
+    CONTROL         "Add",IDC_BUTTON_MENU_ADD_,"Button",BS_OWNERDRAW | WS_TABSTOP,88,137,37,14
+    CONTROL         "Delete",IDC_BUTTON_MENU_DELETE_,"Button",BS_OWNERDRAW | WS_TABSTOP,139,137,38,14
+    LTEXT           "All Menu Item:",IDC_STATIC_ALL_MENUi_ITEM,11,5,77,8
+    LTEXT           "Menu Item:",IDC_STATIC_MENUi_ITEM_INFO,88,7,46,8
+    LTEXT           "Url(Key word is %s1):",IDC_STATIC_COMAMND_MENU,88,30,144,8
+    LTEXT           "Description:",IDC_STATIC_TIP_MENU,88,63,52,8
+    LTEXT           "Caption:",IDC_STATIC_TTITLE_MENU,88,98,144,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_TAB_ADDBUTTON, DIALOG
+    BEGIN
+        LEFTMARGIN, 4
+        RIGHTMARGIN, 239
+        VERTGUIDE, 73
+        VERTGUIDE, 82
+        VERTGUIDE, 174
+        VERTGUIDE, 239
+        TOPMARGIN, 5
+        BOTTOMMARGIN, 171
+        HORZGUIDE, 21
+        HORZGUIDE, 37
+        HORZGUIDE, 44
+    END
+
+    IDD_TAB_ADDMENU, DIALOG
+    BEGIN
+        LEFTMARGIN, 11
+        RIGHTMARGIN, 232
+        VERTGUIDE, 88
+        TOPMARGIN, 5
+        BOTTOMMARGIN, 153
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU_POPUP MENU 
+BEGIN
+    POPUP "MenuPopup"
+    BEGIN
+        MENUITEM "&Configurations...",          ID_MENUPOPUP_CONFIG
+        MENUITEM "Option&2...",                 ID_MENUPOPUP_OPTION2
+        MENUITEM "Option&3...",                 ID_MENUPOPUP_OPTION3
+    END
+END
+
+IDR_MENU_POPUP_2 MENU 
+BEGIN
+    POPUP "More"
+    BEGIN
+        MENUITEM "&Link 1",                     ID_MORE_LINK1
+        MENUITEM "Link2",                       ID_MORE_LINK2
+    END
+END
+
+#endif    // 英语(英国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+1 TYPELIB "XFreeBar.tlb"
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

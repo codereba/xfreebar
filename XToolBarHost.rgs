@@ -1,0 +1,27 @@
+HKCR
+{
+	XFreeBar.XToolBarHost.1 = s 'XFree bar'
+	{
+		CLSID = s '{D8B50602-86BE-4887-B5D5-017C59D3EB14}'
+	}
+	XFreeBar.XToolBarHost = s 'XFree bar'
+	{
+		CLSID = s '{D8B50602-86BE-4887-B5D5-017C59D3EB14}'
+		CurVer = s 'XFreeBar.XToolBarHost.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {D8B50602-86BE-4887-B5D5-017C59D3EB14} = s 'XFree bar'
+		{
+			ProgID = s 'XFreeBar.XToolBarHost.1'
+			VersionIndependentProgID = s 'XFreeBar.XToolBarHost'
+			ForceRemove 'Programmable'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			val AppID = s '%APPID%'
+			'TypeLib' = s '{B1486773-3E27-4A64-B3EF-86ABB3415FE6}'
+		}
+	}
+}

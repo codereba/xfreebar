@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "XFreeBar", "XFreeBar.vdproj", "{F3443839-BBFE-4012-AB93-4F3CF4FF00F8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{00CCF308-C437-4B08-B3E7-BF8081798EFC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Default = Debug|Default
+		Release|Default = Release|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F3443839-BBFE-4012-AB93-4F3CF4FF00F8}.Debug|Default.ActiveCfg = Debug
+		{F3443839-BBFE-4012-AB93-4F3CF4FF00F8}.Debug|Default.Build.0 = Debug
+		{F3443839-BBFE-4012-AB93-4F3CF4FF00F8}.Release|Default.ActiveCfg = Release
+		{F3443839-BBFE-4012-AB93-4F3CF4FF00F8}.Release|Default.Build.0 = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,27 @@
+HKCR
+{
+	XFreeBar.HtmlEventHandler.1 = s 'HtmlEventHandler Class'
+	{
+		CLSID = s '{C4043D9E-842C-4EBD-8575-A7DDE3614E01}'
+	}
+	XFreeBar.HtmlEventHandler = s 'HtmlEventHandler Class'
+	{
+		CLSID = s '{C4043D9E-842C-4EBD-8575-A7DDE3614E01}'
+		CurVer = s 'XFreeBar.HtmlEventHandler.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {C4043D9E-842C-4EBD-8575-A7DDE3614E01} = s 'HtmlEventHandler Class'
+		{
+			ProgID = s 'XFreeBar.HtmlEventHandler.1'
+			VersionIndependentProgID = s 'XFreeBar.HtmlEventHandler'
+			ForceRemove 'Programmable'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			val AppID = s '%APPID%'
+			'TypeLib' = s '{B1486773-3E27-4A64-B3EF-86ABB3415FE6}'
+		}
+	}
+}

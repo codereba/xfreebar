@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- edited with XMLSPY v5 U (http://www.xmlspy.com) by Mike (AndNow) -->
+<TOOLBAR img="xfreebar.bmp" hot_img="xfreebar_hot.bmp" disb_img="xfreebar_disabled.bmp">
+		<BUTTON caption="" img="" hint="X is free" command="Home">
+		<MENU img="xfree.bmp" hot_img="xfree_hot.bmp" type="Single">
+			<!-- Single / Split-->
+			<ITEM caption="CodeProject.com" img="5" hint="CodeProject.com" command="CodeProjectHome"/>
+			<ITEM caption="Microsoft.com" img="4" hint="Microsoft.com" command="MicrosoftHome"/>
+			<ITEM caption="Google.com" img="1" hint="Google.com" command="GoogleHome"/>
+			<ITEM caption="Baidu.com" img="2" hint="Baidu.com" command="BaiduHome"/>
+			
+			<SEPARATOR/>
+			<ITEM caption="Option..." img="-1" hint="Option..." command="option"/>
+			<!--<ITEM caption="Custom..." img="-1" hint="Customize yourself toolbar..." command="custom"/>-->
+			<ITEM caption="Clear History" img="-1" hint="Clear History" command="clearhistory"/>
+			<ITEMBACK caption="Update" img="-1" hint="Update" command="update"/>
+			<ITEM caption="Uninstall" img="-1" hint="Uninstall X Free Bar" command="uninstall"/>
+			<SEPARATOR/>
+      <ITEM caption="About" img="-1" hint="About... " command="about"/>
+		</MENU>
+	</BUTTON>
+	<COMBO caption="" name="s1" hint="Input Key Word" command="" limit="40" img="5" histmax="10">
+		<WIDTH>30</WIDTH>
+	</COMBO>
+
+	<SPLITTER vis_id="splitter" editname = "s1"/>
+	
+	<!--<TICKER caption="Ticker">
+		<tickerstyle font="Tahoma" fontsize="14" bold = "1" underline="1" textcolor="215365" speed="0.05" border="1" bordercolor="231424" width="70" height="16"></tickerstyle>
+		<tickeritem command="MicrosoftHome" delay="0.3" background = "XFree.bmp">Microsoft</tickeritem>
+		<tickeritem command="uninstall" delay="0.3" background = "button.bmp">Uninstall</tickeritem>
+		<tickeritem command="GoogleHTML" delay = "0.3" background = "XFree.bmp">Google</tickeritem>
+		<tickeritem command="Send mail" delay = "0.3" background = "button.bmp">FeedBack(EMail)</tickeritem>
+	</TICKER>-->
+
+  <BUTTON caption="Google" img="1" hint="Search HTML On Google" command="GoogleHTML">
+		<MENU img="" type="Split">
+			<ITEM caption="Video" hint="Search Video On Google" command="GoogleVideo" img="-1"/>
+			<ITEM caption="Image" hint="Search Image On Google" command="GoogleImage" img="8"/>
+			<ITEM caption="News" hint="Search News On Google" command="GoogleNews" img="13"/>
+			<ITEM caption="Map" hint="Search Map Info On Google" command="GoogleMap" img="-1"/>
+			<ITEM caption="Book" hint="Search Book On Google" command="GoogleBook" img="-1"/>
+		</MENU>
+	</BUTTON>
+	
+	<BUTTON caption="Baidu" img="2" hint="Search HTML On Baidu" command="BaiduHTML">
+		<MENU img="" type="Split">
+			<ITEM caption="Video" hint="Search Video On Baidu" command="BaiduVideo" img="-1"/>
+			<ITEM caption="Image" hint="Search Image On Baidu" command="BaiduImage" img="-1"/>
+			<ITEM caption="News" hint="Search News On Baidu" command="BaiduNews" img="-1"/>
+			<ITEM caption="Knownleges" hint="Search Knowleges On Baidu" command="BaiduKown" img="9"/>
+			<ITEM caption="Mp3" hint="Search Mp3 On Baidu" command="BaiduMp3" img="7"/>
+			<ITEM caption="Communities" hint="Search Mp3 On Baidu" command="BaiduTieba" img="-1"/>
+		</MENU>
+	</BUTTON>
+	
+	<BUTTON caption="Microsoft" img="4" hint="Search HTML On Microsoft" command="MicrosoftHome">
+		<MENU img="" type="Split">
+			<ITEM caption="MSDN" hint="Search MSDN On Microsoft" command="MicrosoftMSDN" img="-1"/>
+			<ITEM caption="DOWNLOAD" hint="Search Download On Microsoft" command="MicrosoftDownLoad" img="-1"/>
+			<ITEM caption="Communities" hint="Search Comunities on Microsoft" command="MicrosoftCommunities" img="-1"/>
+			<ITEM caption="XBOX Info" hint="Search Info About XBOX on Microsoft" command="MicrosoftXBOX" img="-1"/>
+			<ITEM caption="Tech Net" hint="Search Tech Info on Microsoft" command="MicrosoftTechNet" img="-1"/>
+		</MENU>
+	</BUTTON>
+	
+	<BUTTON caption="CodeProject" img="5" hint="Search HTML On CodeProject" command="CodeProjectHtml">
+	<MENU type="None"/>
+	</BUTTON>
+  <SEPARATOR vis_id="MovableButtons"/>
+  
+	<BUTTON caption="TheBig" img="5" hint="Search HTML On TheBig" command="thebigHtml">
+	<MENU type="None"/>
+	</BUTTON>
+
+	<BUTTON caption="" img="37" hint="Search DownLoad On XunLei" command="XunLeiDownLoad">
+	<MENU type="None"/>
+	</BUTTON>
+	
+	<BUTTON caption="Execute Shell" img="18" hint="Execute This Command" command="ExecCmd">
+	<MENU type="None"/>
+	</BUTTON>
+	
+	<BUTTON caption="XFreeSearch" img="15" hint="X Free Search" command="">
+		<MENU img="" type="Single">
+			<MENU caption="Video Search">
+				<MENU caption="ToDou">
+					<ITEM vis_id="TuDouVideo" caption="TuDou Video" hint="Search Video On TuDou" command="TuDouVideo" img="3"/>
+					<ITEM caption="Video Group" hint="Search Video List On TuDou" command="TuDouVideoList" img="-1"/>
+				</MENU>
+				<ITEM vis_id="56Video" caption="56 Video" hint="Search Video List On 56" command="56Video" img="-1"/>
+			</MENU>
+		</MENU>
+	</BUTTON>
+	
+	<BUTTON caption="" img="28" hint="Toggle Popup Block.Block Count Is:" command="ToggleBlock" checkkey="IsBlockWindow">
+		<MENU img="" type="Split">
+			<ITEM vis_id="BlockSound" caption="Open Block Sound" hint="Open Block Sound" command="ToggleSound" checkkey ="IsBlockSound" img="-2"/>
+			<ITEM vis_id="CleanCount" caption="Clean Block Count" hint="Clean Block Count" command="CleanBlockCount" img="-2"/>
+		</MENU>
+	</BUTTON>
+
+  <!--<SEPARATOR vis_id="ShowHighlightButton"/>-->
+  <BUTTON vis_id="ShowHighlightButton" caption="Highlight" img="17" hint="Highlight The KeyWord" command="Highlight">
+  <MENU type="None"/>
+  </BUTTON>
+  <!--<SEPARATOR vis_id="ShowFindButtons"/>-->
+
+  <BUTTON vis_id="Option" style="2" caption="Option" img="15" hint="Customize your xfree bar" command="option">
+  <MENU type="None"/>
+  </BUTTON>
+  
+	<COMMANDS>
+    <WEBJUMP name="Home" href="http://google.com" newbrowserwindow="true"/>
+		<WEBJUMP name="MicrosoftHome" href="http://search.microsoft.com" newbrowserwindow="true"/>
+		<WEBJUMP name="MicrosoftMSDN" href="http://search.microsoft.com/results.aspx?q=%s1&amp;qsc0=3" newbrowserwindow="true"/>
+		<WEBJUMP name="MicrosoftTechNet" href="http://search.microsoft.com/results.aspx?q=%s1&amp;qsc0=4" newbrowserwindow="true"/>
+		<WEBJUMP name="MicrosoftCommunities" href="http://search.microsoft.com/results.aspx?q=%s1&amp;qsc0=7" newbrowserwindow="true"/>
+		<WEBJUMP name="MicrosoftXBOX" href="http://search.microsoft.com/results.aspx?q=%s1&amp;qsc0=6" newbrowserwindow="true"/>
+		<WEBJUMP name="MicrosoftDownLoad" href="http://search.microsoft.com/results.aspx?q=%s1&amp;qsc0=1" newbrowserwindow="true"/>
+		<WEBJUMP name="WindowsLive" href="http://search.microsoft.com/results.aspx?q=%s1&amp;qsc0=6&amp;SearchBtn0=Search&amp;FORM=QBME1&amp;l=1&amp;mkt=en-US&amp;PageType=99" newbrowserwindow="true"/>
+		
+		<WEBJUMP name="CodeProjectHome" href="http://www.codeproject.com"/>
+		<WEBJUMP name="CodeProjectHtml" href="http://www.codeproject.com/info/search.aspx?artkw=%s1&amp;sbo=kw"/>
+		
+		<WEBJUMP name="thebigHtml" href="thebig.us/cgi-bin/ss/smartsearch.cgi" post="keywords=%s1"/>
+		
+		<WEBJUMP name="GoogleHome" href="http://google.com"/>
+		<WEBJUMP name="GoogleHTML" href="http://google.com/search?q=%s1&amp;more=%s2" addtoselect="yes"/>
+		<WEBJUMP name="GoogleVideo" href="http://video.google.cn/videosearch?hl=zh-CN&amp;q=%s1&amp;um=1&amp;ie=UTF-8&amp;sa=N&amp;tab=iv"/>
+		<WEBJUMP name="GoogleImage" href="http://images.google.cn/images?hl=zh-CN&amp;q=%s1&amp;um=1&amp;ie=UTF-8&amp;sa=N&amp;tab=wi"/>
+		<WEBJUMP name="GoogleNews" href="http://news.google.cn/news?tab=vn&amp;hl=zh-CN&amp;ie=UTF-8&amp;q=%s1"/>
+		<WEBJUMP name="GoogleMap" href="http://ditu.google.cn/maps?hl=zh-CN&amp;ie=UTF-8&amp;q=%s1&amp;sa=N&amp;tab=nl"/>
+		<WEBJUMP name="GoogleBook" href="http://books.google.cn/books?q=%s1&amp;btnG=%E6%90%9C%E7%B4%A2%E5%9B%BE%E4%B9%A6"/>
+		
+		<WEBJUMP name="BaiduHome" href="http://baidu.com"/>
+		<WEBJUMP name="BaiduHTML" href="http://www.baidu.com/s?wd=%s1&amp;cl=3"/>
+		<WEBJUMP name="BaiduNews" href="http://news.baidu.com/ns?cl=2&amp;rn=20&amp;tn=news&amp;word=%s1"/>
+		<WEBJUMP name="BaiduTieba" href="http://tieba.baidu.com/f?kw=%s1;&amp;t=1"/>
+		<WEBJUMP name="BaiduKown" href="http://zhidao.baidu.com/q?ct=17&amp;pn=0&amp;tn=ikaslist&amp;rn=10&amp;word=%s1"/>
+		<WEBJUMP name="BaiduMp3" href="http://mp3.baidu.com/m?tn=baidump3&amp;ct=134217728&amp;lm=-1&amp;word=%s1&amp;t=2"/>
+		<WEBJUMP name="BaiduImage" href="http://image.baidu.com/i?tn=baiduimage&amp;ct=201326592&amp;lm=-1&amp;cl=2&amp;word=%s1&amp;t=12"/>
+		<WEBJUMP name="BaiduVideo" href="http://video.baidu.com/v?ct=301989888&amp;rn=20&amp;pn=0&amp;db=0&amp;s=0&amp;word=%s1"/>
+		
+		<WEBJUMP name="TuDouVideo" href="http://so.tudou.com/isearch.do?kw=%s1" newbrowserwindow="true"/>
+		<WEBJUMP name="TuDouVideoList" href="http://so.tudou.com/psearch.do?kw=%s1" newbrowserwindow="true"/>
+		
+		<WEBJUMP name="56Video" href="http://so.56.com/index?type=video&amp;key=%s1" newbrowserwindow="true"/>
+		
+		<WEBJUMP name="XunLeiDownLoad" href="http://www.gougou.com/search?search=%s1&amp;restype=-1&amp;id=10000002&amp;ty=01" newbrowserwindow="true"/>
+		
+		
+		<!--<LOCALHTML name="option" href="option.html" newbrowserwindow="false"/>
+		<LOCALHTML name="about" href="about.html" newbrowserwindow="modaldialog"/>
+		<LOCALHTML name="about" href="xfree.gif"/>
+		<LOCALHTML name="about" href="xfree_hot.gif"/>-->
+		
+		<SPECIAL type="ClearHistory" name="clearhistory"/>
+		<SPECIAL type="Search" name="search"/>
+		<SPECIAL type="Uninstall" name="uninstall"/>
+		<SPECIAL type="Update" name="update"/>
+		<SPECIAL type="Option" name="option"/>
+		<SPECIAL type="Hide toolbar" name = "hidetoolbar"/>
+		<SPECIAL type="Config toolbar" name = "configtoolbar"/>		
+		<SPECIAL type="Switch to" name="Microsoft" display="S Microsoft"/>
+		<SPECIAL type="Switch to" name="Google" display="S Google"/>
+		<SPECIAL type="Switch to" name="thebig" display="S thebig"/>
+    <SPECIAL type="About" name="about"/>
+
+		<SPECIAL type="Make Default Toolbar" name="Make Default"/>
+
+		<POPBLOCK BlockOption = "IsBlock" name = "ToggleBlock"/>
+		<POPBLOCK BlockOption = "IsSound" name = "ToggleSound"/>
+		<POPBLOCK BlockOption = "IsClean" name = "CleanBlockCount"/>
+		
+		<SHELLEXECUTE name="ExecCmd" command="%s1" not_found="Invalid Command" type = "1"/>
+		<SHELLEXECUTE name="Send mail"  type = "0" command="mailto:dante.1265@hotmail.com?subject=Feedback&amp;body=The%20InetSDK%20Site%20Is%20Superlative" not_found="Can't find email application"/>
+		<HIGHLIGHT name="Highlight"/>
+	</COMMANDS>
+	
+	<SETTINGS WordFindHint="Find Text In Document">
+		<CHECKBOX id="scope" default="-1"/>
+		<CHECKBOX id="OpenNew" default="0"/>
+		<CHECKBOX id="AutoComplete"/>
+		<CHECKBOX id="KeepHistory"/>
+		<CHECKBOX id="RunSearchAutomatically"/>
+		<CHECKBOX id="RunSearchDragAutomatically"/>
+		<CHECKBOX id="DescriptiveText"/>
+		<CHECKBOX id="ShowHighlightButton"/>
+		<CHECKBOX id="ShowFindButtons" default="1"/>
+		
+		<FONT name="MS Sans Serif" size = "13"/>
+		<FONT name="Tahoma" size="13"/>
+		
+		<HIGHLIGHT>
+			<COLOR>F6FF00</COLOR>
+			<COLOR>00FFE4</COLOR>
+			<COLOR>5AFF00</COLOR>
+			<COLOR>0087FF</COLOR>
+			<COLOR>FFCC00</COLOR>
+			<COLOR>FF00F0</COLOR>
+		</HIGHLIGHT>
+		
+	</SETTINGS>
+
+  <!--<PAGE url="http://www.praize.com/cgi-bin/members/cforums.cgi?forumid=10228245326057" img="-2" caption="Page"/>-->
+  <!--<SEPARATOR vis_id="custom button"/>-->
+	<INCLUDEXML>xfreebar_config_ex.xml</INCLUDEXML>
+</TOOLBAR>

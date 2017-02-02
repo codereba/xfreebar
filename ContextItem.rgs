@@ -1,0 +1,46 @@
+
+HKCR
+{
+	GoRSDN.ContextItem.1 = s 'ContextItem Class'
+	{
+		CLSID = s '{FC2493D6-A673-49FE-A2EE-EFE03E95C27C}'
+	}
+	GoRSDN.ContextItem = s 'ContextItem Class'
+	{
+		CLSID = s '{FC2493D6-A673-49FE-A2EE-EFE03E95C27C}'
+		CurVer = s 'GoRSDN.ContextItem.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {FC2493D6-A673-49FE-A2EE-EFE03E95C27C} = s 'ContextItem Class'
+		{
+			ProgID = s 'GoRSDN.ContextItem.1'
+			VersionIndependentProgID = s 'GoRSDN.ContextItem'
+			ForceRemove 'Programmable'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			'TypeLib' = s '{48DA6120-A779-4c12-8584-47B625EFB469}'
+		}
+	}
+}
+HKCU
+{
+    NoRemove Software
+	{
+	    NoRemove Microsoft
+		{
+			NoRemove 'Internet Explorer'
+			{
+				NoRemove MenuExt
+				{
+					'&RSDN Search' = s 'res://%MODULE%/GoRSDN.dll.htm'
+					{
+					    val Contexts = d '48'
+					}
+				}
+			}
+		}
+	}
+}
